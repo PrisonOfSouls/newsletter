@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047847298738",
+    "project_id": "newsletter-6043e",
+    "storage_bucket": "newsletter-6043e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047847298738:android:868c24db47483f9ee1cbab",
+        "android_client_info": {
+          "package_name": "com.newsletter.newsletter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047847298738-mmsk08961qcq66r75s3ita5j3739dmaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWw7tHaziDVALQ3DTWXqEJHqaasYmb_Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047847298738-mmsk08961qcq66r75s3ita5j3739dmaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

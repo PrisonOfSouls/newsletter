@@ -1,0 +1,68 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "header": "А как Вы с любимым ласково называете друг друга?",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "isTopic": true
+    },
+    {
+      "id": "1",
+      "name": "Lera Klimenko",
+      "header": "Погодки!",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "date": 1623744967000,
+      "likes": 22,
+      "comments": 34,
+      "subscription": false
+    },
+    {
+      "id": "2",
+      "name": "Anna Ivanova",
+      "header": "Погодки!",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "date": 1629879367000,
+      "likes": 25,
+      "comments": 34,
+      "subscription": true
+    },
+    {
+      "id": "3",
+      "name": "Lera Klimenko",
+      "header": "Погодки!",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "date": 1630181974068,
+      "likes": 55,
+      "comments": 34,
+      "image": "test.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Anna Ivanova",
+      "header": "Погодки!",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "date": 1587716952000,
+      "likes": 5,
+      "comments": 4,
+      "subscription": false
+    },
+    {
+      "id": "6",
+      "name": "Lera Klimenko",
+      "header": "Погодки!",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "date": 1600936152000,
+      "likes": 5,
+      "comments": 4,
+      "subscription": true
+    },
+    {
+      "id": "3",
+      "name": "Lera Klimenko",
+      "date": 1630181974068,
+      "likes": 15,
+      "comments": 4,
+      "image": "test.jpg"
+    }
+  ]
+}

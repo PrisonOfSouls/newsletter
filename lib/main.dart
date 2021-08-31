@@ -1,47 +1,76 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:newsletter/widgets.dart';
+import 'package:provider/provider.dart';
+import 'state.dart';
 
-void main() {
-  runApp(MyApp());
+void main() async {
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => ApplicationState(),
+      builder: (context, _) => App()
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'News',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.cyan,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: MyHomePage(title: 'News'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      )
+      home: DefaultTabController(
+          length: 3,
+          child: Scaffold(
+              appBar: AppBar(
+                backgroundColor: Colors.white,
+                leading: Icon(
+                  Icons.filter_list_rounded,
+                  color: Colors.cyan,
+                  size: 30,
+                ),
+                title: const Text(
+                    'News',
+                    style: TextStyle(color: Colors.black)
+                ),
+                actionsIconTheme: IconThemeData(color: Colors.black),
+                actions: <Widget>[
+                  IconButton(
+                    icon: Icon(Icons.location_on),
+                    onPressed: () => {},
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.search),
+                    onPressed: () => {},
+                  ),
+                ],
+                bottom: const TabBar(
+                  labelColor: Colors.black,
+                  indicatorColor: Colors.cyan,
+                  indicatorWeight: 4.0,
+                  unselectedLabelColor: Colors.grey,
+                  tabs: [
+                    Tab(icon: Text('Новые')),
+                    Tab(icon: Text('Популярные')),
+                    Tab(icon: Text('Подписки')),
+                  ],
+                ),
+              ),
+              body: Container(
+                color: Colors.grey[400],
+                child: TabBarView(
+                    children: [
+                      NewsNewTab(),
+                      NewsPopularTab(),
+                      NewsSubscriptionsTab()
+                    ]
+                ),
+              )
+          )
+      ),
     );
   }
 }
